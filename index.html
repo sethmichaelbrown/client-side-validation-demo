@@ -3,29 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Client Side Validation Demo</title>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
   </head>
 
   <body>
 
-    <form>
+    <form class="input-form">
 
-      <div>
+      <div class="input-form">
+        <label for="email-input">Email</label>
+        <input id="email-input" type="email" required>
+      </div>
+
+      <div class="input-form">
         <label for="password">Password</label>
         <input id="password-input" type="password" required>
       </div>
 
-      <div class>
-        <label for="checkbox-input">Admin</label>
-        <input id="checkbox-input" type="checkbox" value="admin" checked>
-      </div>
-
-      <div>
+      <div class="input-form">
         <label for="tel-input">Telephone</label>
-        <input id="tel-input" type="tel" disabled>
+        <input id="tel-input" type="tel">
       </div>
 
-      <div>
+      <div class="input-form">
+        <label for="admin-input">Admin</label>
+        <input id="admin-input" type="checkbox" value="admin">
+      </div>
+
+      <div class="input-form">
         <input type="submit" value="Submit">
       </div>
 
